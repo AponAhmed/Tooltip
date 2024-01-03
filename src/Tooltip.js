@@ -2,7 +2,7 @@ import "./tooltip.css";
 
 export default class Tooltip {
     constructor({ ...args }) {
-        this.item = args.item || {};
+        this.item = args.item || false;
         this.position = args.position || 'right';
         this.text = args.text || false;
         this.bg = args.bg || "#1a1f30";
@@ -24,14 +24,16 @@ export default class Tooltip {
 
         this.tooltip.appendChild(this.tooltipArrow);
         this.tooltip.appendChild(this.tooltipTitle);
+        
+        if (this.item) {
+            this.item.addEventListener('mouseover', (e) => {
+                this.showTooltip(this.item, e);
+            });
+            this.item.addEventListener('mouseout', () => {
+                this.removeTooltip();
+            });
+        }
 
-        this.item.addEventListener('mouseover', (e) => {
-            this.showTooltip(this.item, e);
-        });
-
-        this.item.addEventListener('mouseout', () => {
-            this.removeTooltip();
-        });
     }
 
     removeTooltip() {
