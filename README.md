@@ -2,16 +2,22 @@
 
 The Tooltip class is designed to create and display tooltips on HTML elements.
 
+## Installation
+
+```base 
+        npm i @aponahmed/tooltip --save-dev
+    ```
+
 ## Usage
 
 1. Import the Tooltip class and its associated styles:
-
+2. 
    ```javascript
-   import "./tooltip.css";
    import Tooltip from "./Tooltip";
+
    ```
 
-2. Create an instance of the Tooltip class:
+3. Create an instance of the Tooltip class:
 
    ```javascript
    const tooltip = new Tooltip({
