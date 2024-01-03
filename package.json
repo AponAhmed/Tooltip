@@ -1,6 +1,6 @@
 {
   "name": "@aponahmed/tooltip",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple tooltip plugin to show hint",
   "main": "index.js",
   "scripts": {
