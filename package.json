@@ -1,0 +1,26 @@
+{
+  "name": "@aponahmed/tooltip",
+  "version": "0.0.1",
+  "description": "A simple tooltip plugin to show hint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AponAhmed/Tooltip.git"
+  },
+  "keywords": [
+    "tooltip",
+    "Hint",
+    "Title",
+    "Tooltip",
+    "title"
+  ],
+  "author": "MD. Muhiminul Haque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AponAhmed/Tooltip/issues"
+  },
+  "homepage": "https://github.com/AponAhmed/Tooltip#readme"
+}
