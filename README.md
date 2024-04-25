@@ -10,10 +10,15 @@ The Tooltip class is designed to create and display tooltips on HTML elements.
 
 ## Usage
 
+```html 
+<button class="tooltip" data-color="#fff" data-bg="#000" data-position="top" title="Top Tooltip">Hover me</button>
+
+```
+
 1. Import the Tooltip class and its associated styles:
 2. 
    ```javascript
-   import Tooltip from "./Tooltip";
+   import Tooltip from "@aponahmed/tooltip";
 
    ```
 
@@ -32,7 +37,14 @@ The Tooltip class is designed to create and display tooltips on HTML elements.
    Alternatively, you can use the `all` method to apply tooltips to multiple elements with a common class:
 
    ```javascript
-   tooltip.all(".tooltip");
+   import { tooltip } from "@aponahmed/tooltip"
+   
+   tooltip(".tooltip", {
+    position: 'right', // Tooltip position (optional, default is 'right')
+    text: 'Tooltip Content', // Tooltip text content (optional, default is 'Tooltip Content')
+    bg: '#1a1f30', // Tooltip background color (optional, default is '#1a1f30')
+    color: '#fff' // Tooltip text color (optional, default is '#fff')
+});
    ```
 
 ## Properties
