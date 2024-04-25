@@ -24,7 +24,7 @@ export default class Tooltip {
 
         this.tooltip.appendChild(this.tooltipArrow);
         this.tooltip.appendChild(this.tooltipTitle);
-        
+
         if (this.item) {
             this.item.addEventListener('mouseover', (e) => {
                 this.showTooltip(this.item, e);
@@ -39,7 +39,7 @@ export default class Tooltip {
     removeTooltip() {
         let tooltip = document.querySelector('.tooltip-container');
         if (tooltip) {
-            tooltip.remove();
+           // tooltip.remove();
         }
     }
 
@@ -93,9 +93,11 @@ export default class Tooltip {
         }
         this.tooltip.removeAttribute('style');
         this.tooltip.style.backgroundColor = this.bg;
+        this.tooltip.style.color = this.color;
     }
 
     showTooltip(item, e) {
+
         if (!this.text) {
             this.text = item.title;
         }
@@ -116,7 +118,7 @@ export default class Tooltip {
                 this.showTooltip(citem, e);
             });
             this.item.addEventListener('mouseout', () => {
-                this.removeTooltip();
+                //this.removeTooltip();
             });
         });
     }

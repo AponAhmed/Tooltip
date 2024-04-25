@@ -37,7 +37,9 @@
     transform: translate(-50%, 0);
 }
 .tooltip-container .tooltip-title {
-    font-size: 14px;
-    font-weight: 300;
-    font-family: inherit;
+	font-size: 14px;
+	font-family: inherit;
+	color: inherit;
+	line-height: 1;
+	text-transform: capitalize;
 }
