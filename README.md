@@ -4,9 +4,9 @@ The Tooltip class is designed to create and display tooltips on HTML elements.
 
 ## Installation
 
-```base 
-        npm i @aponahmed/tooltip --save-dev
-    ```
+```bash
+      npm i @aponahmed/tooltip --save-dev
+```
 
 ## Usage
 
