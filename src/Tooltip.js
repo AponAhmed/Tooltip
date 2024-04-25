@@ -39,7 +39,7 @@ export default class Tooltip {
     removeTooltip() {
         let tooltip = document.querySelector('.tooltip-container');
         if (tooltip) {
-           // tooltip.remove();
+            tooltip.remove();
         }
     }
 
@@ -118,7 +118,7 @@ export default class Tooltip {
                 this.showTooltip(citem, e);
             });
             this.item.addEventListener('mouseout', () => {
-                //this.removeTooltip();
+                this.removeTooltip();
             });
         });
     }
