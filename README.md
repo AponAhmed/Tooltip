@@ -44,10 +44,10 @@ The Tooltip class is designed to create and display tooltips on HTML elements.
     text: 'Tooltip Content', // Tooltip text content (optional, default is 'Tooltip Content')
     bg: '#1a1f30', // Tooltip background color (optional, default is '#1a1f30')
     color: '#fff' // Tooltip text color (optional, default is '#fff')
-});
-   ```
+	});
+	```
 
-## Properties
+	## Properties
 
 - `item`: HTML element triggering the tooltip.
 - `position`: Position of the tooltip relative to the triggering element ('right', 'left', 'top', 'bottom').
